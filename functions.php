@@ -85,3 +85,13 @@ add_action( 'widgets_init', 'speeltuin_sidebar_widgets_init' );
         wp_enqueue_script( 'main', get_template_directory_uri(  ) . '/assets/js/main.js', ['jquery'], wp_rand(), true );
  }
     add_action('wp_enqueue_scripts', 'speeltuin_public_scripts');
+
+    function theme_custom_logo_setup() {
+        add_theme_support('company-logo', array(
+            'height'      => 100,
+            'width'       => 200,
+            'flex-height' => true,
+            'flex-width'  => true,
+        ));
+    }
+    add_action('after_setup_theme', 'theme_custom_logo_setup');

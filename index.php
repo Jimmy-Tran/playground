@@ -7,6 +7,20 @@
  ?>
 
 <div id="primary" class="content-area">
+    <div class="hero-container">
+        <div class="left">
+            <span class="small_slogan">Welcome to Venum</span>
+            <h1 class="slogan">
+                Premium sportwear <br>for atlethes
+            </h1>
+            <p>We are a French based brand that sells premium sportwear for athletes we have been in the scene since 1974 and have been many people their favorite company.</p>
+        </div>
+        <div class="right">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/heroimage.webp' ?>" alt="Hero image">
+        </div>
+    </div>
+</div>
+
     <main id="main" class="site-main">
     <?php 
         
